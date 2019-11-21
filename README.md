@@ -3,13 +3,15 @@
 > To run the application you need to  install dependances ( frontend & backend)
 > Make sure you have mysql up and running and import the attached db.sql file
 
-# cd back-end
-# composer install 
-# php -S 127.0.0.1:80
+## Run backend 
+- cd back-end
+- composer install 
+- php -S 127.0.0.1:80
 
-# cd front-end
-# npm install
-# npm run dev         
+## Run frontend 
+- cd front-end
+- npm install
+- npm run dev         
 
 Goto to check frontend app  http://localhost:8080
 
