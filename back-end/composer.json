@@ -1,0 +1,30 @@
+{
+    "require": {
+        "nezamy/route": "*",
+        "illuminate/database": "*",
+        "swiftmailer/swiftmailer":"^6.0",
+        "monolog/monolog": "^1.24"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "disable-tls": true,
+        "secure-http": false
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "static": "./vendor/bin/phpstan analyse -c phpstan.neon -l 0 src"
+    }
+}
